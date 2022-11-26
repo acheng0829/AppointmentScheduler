@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="446.0" prefWidth="720.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.reportsController">
+   <children>
+      <AnchorPane layoutX="18.0" layoutY="11.0" prefHeight="255.0" prefWidth="687.0">
+         <children>
+            <ComboBox fx:id="ContactComboBox" layoutX="233.0" layoutY="2.0" onAction="#ContactComboBoxAction" prefWidth="150.0" />
+            <TableView fx:id="ContactAppointmentsTable" layoutX="16.0" layoutY="39.0" prefHeight="176.0" prefWidth="630.0">
+              <columns>
+                <TableColumn fx:id="AppointmentID" prefWidth="99.0" text="Appointment ID" />
+                <TableColumn fx:id="Title" prefWidth="51.0" text="Title" />
+                  <TableColumn fx:id="Type" prefWidth="75.0" text="Type" />
+                  <TableColumn fx:id="Description" prefWidth="75.0" text="Description" />
+                  <TableColumn fx:id="StartDateAndTime" prefWidth="124.0" text="Start Date And Time" />
+                  <TableColumn fx:id="EndDateAndTime" prefWidth="117.0" text="End Date And Time" />
+                  <TableColumn fx:id="CustomerID" minWidth="0.0" prefWidth="88.0" text="Customer ID" />
+              </columns>
+            </TableView>
+            <Label layoutX="16.0" layoutY="5.0" prefHeight="19.0" prefWidth="205.0" text="Appointment Schedule for Contact:">
+               <font>
+                  <Font size="13.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="57.0" layoutY="238.0" prefHeight="163.0" prefWidth="233.0">
+         <children>
+            <ComboBox fx:id="TypeComboBox" layoutX="56.0" layoutY="63.0" onAction="#TypeComboBoxAction" prefHeight="25.0" prefWidth="122.0" />
+            <ComboBox fx:id="MonthComboBox" layoutX="56.0" layoutY="101.0" onAction="#MonthComboBoxAction" prefHeight="25.0" prefWidth="122.0" />
+            <Label fx:id="TypesLabel" layoutX="184.0" layoutY="63.0" prefHeight="25.0" prefWidth="39.0" text="Label" />
+            <Label fx:id="MonthsLabel" layoutX="184.0" layoutY="101.0" prefHeight="25.0" prefWidth="39.0" text="Label" />
+            <Label layoutX="3.0" layoutY="31.0" prefHeight="25.0" prefWidth="191.0" text="Total Number of Appointments By:">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <Label layoutX="8.0" layoutY="67.0" text="Type:" />
+            <Label layoutX="3.0" layoutY="105.0" text="Month:" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="420.0" layoutY="249.0" prefHeight="141.0" prefWidth="233.0">
+         <children>
+            <Label layoutX="22.0" layoutY="6.0" prefHeight="17.0" prefWidth="160.0" text="Next Appointment">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="userID" layoutX="139.0" layoutY="33.0" text="user">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Label>
+            <Label fx:id="upcomingAppointmentDate" layoutX="70.0" layoutY="58.0" prefHeight="19.0" prefWidth="160.0" text="N/A" />
+            <Label fx:id="upcomingAppointmentTime" layoutX="70.0" layoutY="79.0" prefHeight="17.0" prefWidth="150.0" text="N/A" />
+            <Label layoutX="23.0" layoutY="59.0" text="Date: " />
+            <Label layoutX="22.0" layoutY="79.0" text="Time: " />
+            <Label layoutX="22.0" layoutY="31.0" prefHeight="20.0" prefWidth="122.0" text="For User with ID: ">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+         </children>
+      </AnchorPane>
+      <Button fx:id="CloseButton" layoutX="523.0" layoutY="384.0" mnemonicParsing="false" onAction="#CloseButtonAction" prefHeight="45.0" prefWidth="81.0" text="Close" />
+   </children>
+</AnchorPane>

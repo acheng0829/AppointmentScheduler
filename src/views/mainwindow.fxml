@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.mainController">
+   <children>
+      <AnchorPane layoutX="202.0" layoutY="109.0" prefHeight="111.0" prefWidth="150.0">
+         <children>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="11.0" layoutY="22.0" prefHeight="28.0" prefWidth="128.0" text="View Customers">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="CustomersButton" layoutX="29.0" layoutY="50.0" mnemonicParsing="false" onAction="#CustomersButtonAction" prefHeight="47.0" prefWidth="92.0" text="Customers" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="27.0" layoutY="108.0" prefHeight="125.0" prefWidth="160.0">
+         <children>
+            <Button fx:id="AppointmentsButton" layoutX="27.0" layoutY="49.0" mnemonicParsing="false" onAction="#AppointmentsButtonAction" prefHeight="47.0" prefWidth="104.0" text="Appointments" />
+            <Label layoutX="23.0" layoutY="21.0" prefHeight="28.0" prefWidth="142.0" text="View Appointments">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="378.0" layoutY="134.0" prefHeight="105.0" prefWidth="150.0">
+         <children>
+            <Label layoutX="26.0" layoutY="1.0" prefHeight="28.0" prefWidth="98.0" text="View Reports">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="ReportsButton" layoutX="29.0" layoutY="29.0" mnemonicParsing="false" onAction="#ReportsButtonAction" prefHeight="47.0" prefWidth="92.0" text="Reports" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="71.0" layoutY="29.0" prefHeight="60.0" prefWidth="437.0">
+         <children>
+            <Label layoutX="119.0" layoutY="49.0" prefHeight="34.0" prefWidth="184.0" text="Select Window to View:">
+               <font>
+                  <Font name="System Italic" size="16.0" />
+               </font>
+            </Label>
+            <Label layoutX="81.0" layoutY="2.0" prefHeight="47.0" prefWidth="276.0" text="GUI Appointment Scheduler" underline="true">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

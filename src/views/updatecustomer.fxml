@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.updatecustomerController">
+    <children>
+        <AnchorPane layoutX="89.0" layoutY="65.0" prefHeight="270.0" prefWidth="466.0">
+            <children>
+                <TextField fx:id="CustomerName" layoutX="142.0" layoutY="75.0" />
+                <TextField fx:id="Address" layoutX="142.0" layoutY="123.0" />
+                <TextField fx:id="PostalCode" layoutX="142.0" layoutY="171.0" />
+                <TextField fx:id="PhoneNumber" layoutX="142.0" layoutY="217.0" />
+                <Label layoutX="34.0" layoutY="75.0" prefHeight="25.0" prefWidth="94.0" text="Customer Name:" />
+                <Label layoutX="34.0" layoutY="123.0" prefHeight="25.0" prefWidth="55.0" text="Address:" />
+                <Label layoutX="34.0" layoutY="171.0" prefHeight="25.0" prefWidth="83.0" text="Postal Code:" />
+                <Label layoutX="34.0" layoutY="217.0" prefHeight="25.0" prefWidth="94.0" text="Phone Number:" />
+                <TextField fx:id="CustomerID" disable="true" layoutX="142.0" layoutY="28.0" />
+                <Label layoutX="34.0" layoutY="32.0" text="Customer ID" />
+            <Label layoutX="309.0" layoutY="32.0" text="Select Country" />
+            <Label layoutX="309.0" layoutY="127.0" text="Select Division" />
+            <ComboBox fx:id="Country" layoutX="302.0" layoutY="75.0" onAction="#CountryComboBox" prefWidth="150.0" />
+            <ComboBox fx:id="FirstLevelDivision" layoutX="302.0" layoutY="171.0" onAction="#DivisionComboBox" prefWidth="150.0" />
+            </children>
+        </AnchorPane>
+        <Button fx:id="cancelButton" layoutX="512.0" layoutY="344.0" mnemonicParsing="false" onAction="#Cancel" prefHeight="33.0" prefWidth="65.0" text="Cancel" />
+        <Button fx:id="updateButton" layoutX="23.0" layoutY="344.0" mnemonicParsing="false" onAction="#Update" prefHeight="33.0" prefWidth="65.0" text="Update" />
+    </children>
+</AnchorPane>
